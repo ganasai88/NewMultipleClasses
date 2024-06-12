@@ -1,0 +1,22 @@
+{
+  "file_input": [
+    {
+      "source_type": "local",
+      "table_name": "my_table",
+      "path": "C:\\Users\\ganas\\NewScala\\pipeline\\data\\file2.csv"
+    }
+  ],
+  "transform": [
+    {
+      "table_name": "result_1",
+      "sql": "SELECT * FROM my_table"
+    }
+  ],
+  "file_write":[
+    {
+      "source_type": "local",
+      "table_name":"result_1",
+      "file_output":"C:\\Users\\ganas\\NewScala\\pipeline\\data\\output.csv"
+    }
+  ]
+}

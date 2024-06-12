@@ -1,0 +1,36 @@
+{
+  "file_input": [
+    {
+      "source_type": "local",
+      "table_name": "my_table",
+      "path": "C:\\Users\\ganas\\NewScala\\multipleclasses\\data\\file2.csv"
+    },
+    {
+      "source_type": "local",
+      "table_name": "my_table_1",
+      "path": "C:\\Users\\ganas\\NewScala\\multipleclasses\\data\\file1.csv"
+    }
+  ],
+  "transform": [
+    {
+      "table_name": "result_1",
+      "sql": "SELECT * FROM my_table"
+    },
+    {
+      "table_name": "result_2",
+      "sql": "SELECT * FROM my_table_1"
+    }
+  ],
+  "file_write":[
+    {
+      "source_type": "local",
+      "table_name":"result_1",
+      "file_output":"C:\\Users\\ganas\\NewScala\\multipleclasses\\data\\output.csv"
+    },
+    {
+      "source_type": "local",
+      "table_name":"result_2",
+      "file_output":"C:\\Users\\ganas\\NewScala\\multipleclasses\\data\\output.csv"
+    }
+  ]
+}
